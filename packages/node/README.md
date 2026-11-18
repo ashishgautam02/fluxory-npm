@@ -1,6 +1,6 @@
 # @fluxory/node
 
-Zero-config Node.js auto-instrumentation for [fluxory](https://github.com/AshishGautamKarn/fluxory).
+Zero-config Node.js auto-instrumentation for [fluxory](https://github.com/ashishgautam02/fluxory-npm).
 
 ## Install
 
@@ -50,7 +50,7 @@ initNode({
 })
 ```
 
-See the [main readme](https://github.com/AshishGautamKarn/fluxory) for full documentation.
+See the [main readme](https://github.com/ashishgautam02/fluxory-npm) for full documentation.
 
 ## License
 

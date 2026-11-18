@@ -1,6 +1,6 @@
 # @fluxory/dashboard
 
-Live observability dashboard for [fluxory](https://github.com/AshishGautamKarn/fluxory).
+Live observability dashboard for [fluxory](https://github.com/ashishgautam02/fluxory-npm).
 
 ## Install
 
@@ -29,7 +29,7 @@ Opens at `http://localhost:4000`. Receives spans from `@fluxory/node` and `@flux
 PORT=4000 npx fluxory
 ```
 
-See the [main readme](https://github.com/AshishGautamKarn/fluxory) for full documentation.
+See the [main readme](https://github.com/ashishgautam02/fluxory-npm) for full documentation.
 
 ## License
 

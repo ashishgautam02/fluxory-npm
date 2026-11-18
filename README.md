@@ -27,11 +27,11 @@ The dashboard connects over WebSocket and renders a live topology graph, trace w
 
 ## Packages
 
-| Package | Purpose |
-|---------|---------|
-| `@fluxory/core` | Shared types, trace ID generation, context propagation, transport |
-| `@fluxory/node` | Node.js auto-instrumentation (HTTP, Express, databases, queues) |
-| `@fluxory/client` | Browser auto-instrumentation (fetch, XHR, clicks, navigation) |
+| Package                | Purpose                                                                        |
+| ---------------------- | ------------------------------------------------------------------------------ |
+| `@fluxory/core`      | Shared types, trace ID generation, context propagation, transport              |
+| `@fluxory/node`      | Node.js auto-instrumentation (HTTP, Express, databases, queues)                |
+| `@fluxory/client`    | Browser auto-instrumentation (fetch, XHR, clicks, navigation)                  |
 | `@fluxory/dashboard` | Live dashboard with collector, topology graph, trace waterfall, and log viewer |
 
 ## Quick start
@@ -96,23 +96,23 @@ init({ collectorUrl: 'http://localhost:4000', apiKey: 'my-secret-key' })
 
 ### Node.js (`@fluxory/node`)
 
-| Category | Technologies |
-|----------|-------------|
-| **HTTP** | `http` / `https` (outgoing requests) |
-| **Frameworks** | Express, Next.js (middleware, actions, routes) |
-| **Databases** | PostgreSQL (`pg`), MySQL (`mysql2`), MongoDB, Prisma, Sequelize, TypeORM |
-| **Cache** | Redis (`ioredis` / `redis`) |
-| **Queues** | RabbitMQ (`amqplib`), Kafka (`kafkajs`) |
-| **RPC** | gRPC (`@grpc/grpc-js`) |
-| **API** | GraphQL (`graphql`) |
-| **Logs** | stdout / stderr capture |
+| Category             | Technologies                                                                 |
+| -------------------- | ---------------------------------------------------------------------------- |
+| **HTTP**       | `http` / `https` (outgoing requests)                                     |
+| **Frameworks** | Express, Next.js (middleware, actions, routes)                               |
+| **Databases**  | PostgreSQL (`pg`), MySQL (`mysql2`), MongoDB, Prisma, Sequelize, TypeORM |
+| **Cache**      | Redis (`ioredis` / `redis`)                                              |
+| **Queues**     | RabbitMQ (`amqplib`), Kafka (`kafkajs`)                                  |
+| **RPC**        | gRPC (`@grpc/grpc-js`)                                                     |
+| **API**        | GraphQL (`graphql`)                                                        |
+| **Logs**       | stdout / stderr capture                                                      |
 
 ### Browser (`@fluxory/client`)
 
-| Category | Technologies |
-|----------|-------------|
-| **HTTP** | `fetch`, `XMLHttpRequest`, Axios |
-| **Interactions** | Click tracking, route navigation |
+| Category               | Technologies                         |
+| ---------------------- | ------------------------------------ |
+| **HTTP**         | `fetch`, `XMLHttpRequest`, Axios |
+| **Interactions** | Click tracking, route navigation     |
 
 ## Custom tracing
 
@@ -168,28 +168,28 @@ All configuration is through environment variables. No config files needed.
 
 ### Core
 
-| Variable | Default | Description |
-|---|---|---|
-| `FLUXORY_PORT` | `4000` | Dashboard and collector port |
-| `FLUXORY_API_KEY` | — | API key for ingestion (shared between sender and collector) |
-| `FLUXORY_DASHBOARD` | `false` | Auto-start dashboard from `@fluxory/node` |
-| `FLUXORY_DB_PATH` | — | SQLite file path for persistence (omit for in-memory only) |
+| Variable              | Default   | Description                                                 |
+| --------------------- | --------- | ----------------------------------------------------------- |
+| `FLUXORY_PORT`      | `4000`  | Dashboard and collector port                                |
+| `FLUXORY_API_KEY`   | —        | API key for ingestion (shared between sender and collector) |
+| `FLUXORY_DASHBOARD` | `false` | Auto-start dashboard from`@fluxory/node`                  |
+| `FLUXORY_DB_PATH`   | —        | SQLite file path for persistence (omit for in-memory only)  |
 
 ### Auth
 
-| Variable | Default | Description |
-|---|---|---|
-| `FLUXORY_DASH_USER` | — | Dashboard login username (both required to enable auth) |
-| `FLUXORY_DASH_PASS` | — | Dashboard login password |
-| `FLUXORY_SESSION_TTL` | `1440` | Session lifetime in minutes (default 24h) |
+| Variable                | Default  | Description                                             |
+| ----------------------- | -------- | ------------------------------------------------------- |
+| `FLUXORY_DASH_USER`   | —       | Dashboard login username (both required to enable auth) |
+| `FLUXORY_DASH_PASS`   | —       | Dashboard login password                                |
+| `FLUXORY_SESSION_TTL` | `1440` | Session lifetime in minutes (default 24h)               |
 
 ### Security
 
-| Variable | Default | Description |
-|---|---|---|
-| `FLUXORY_RATE_LIMIT` | `10000` | Ingestion requests per minute per IP |
-| `FLUXORY_TRUST_PROXY` | `false` | Trust `X-Forwarded-For` (enable behind a reverse proxy) |
-| `FLUXORY_CORS_ORIGIN` | — | Allowed CORS origin for dashboard API (default: same-origin only) |
+| Variable                | Default   | Description                                                       |
+| ----------------------- | --------- | ----------------------------------------------------------------- |
+| `FLUXORY_RATE_LIMIT`  | `10000` | Ingestion requests per minute per IP                              |
+| `FLUXORY_TRUST_PROXY` | `false` | Trust`X-Forwarded-For` (enable behind a reverse proxy)          |
+| `FLUXORY_CORS_ORIGIN` | —        | Allowed CORS origin for dashboard API (default: same-origin only) |
 
 ### Programmatic
 
@@ -275,7 +275,7 @@ fluxory/
 ## Development
 
 ```bash
-git clone https://github.com/AshishGautamKarn/fluxory.git
+git clone https://github.com/ashishgautam02/fluxory-npm.git
 cd fluxory
 npm install
 npm run build
@@ -291,24 +291,24 @@ npm run dev:dashboard
 
 > fluxory is just getting started. Here's what's on the roadmap.
 
-| | Feature | Description |
-|---|---------|-------------|
-| :bell: | **Alerts & Notifications** | Threshold and anomaly alerts via Slack, email, and webhooks |
-| :busts_in_silhouette: | **Team Auth & SSO** | Multi-user access with roles, OIDC, and SAML support |
-| :bar_chart: | **Custom Dashboards** | Save filtered views, pin charts, build your own layouts |
-| :brain: | **AI Insights** | Anomaly detection, automatic root cause analysis, smart error grouping |
-| :stopwatch: | **Performance Budgets** | Set latency and error-rate thresholds per endpoint — fail CI builds when exceeded |
-| :movie_camera: | **Session Replay** | Record browser sessions tied to traces — see what the user saw |
-| :globe_with_meridians: | **Multi-Project** | Monitor multiple apps and environments from a single dashboard |
-| :chart_with_upwards_trend: | **API Analytics** | Endpoint-level p50/p95/p99 latencies, throughput trends, slow query ranking |
-| :satellite: | **Uptime Monitoring** | Synthetic health checks with public status pages |
-| :outbox_tray: | **Export** | Trace and log export to CSV, JSON, and OpenTelemetry format |
-| :cloud: | **Cloud-Hosted Collector** | Managed ingestion — no self-hosting required |
-| :octocat: | **Git Integration** | Link traces to deploys and commits from GitHub and GitLab |
-| :shield: | **Compliance Tools** | PII redaction rules, data masking, audit trail export |
-| :world_map: | **Multi-Region** | Geo-distributed collectors with data residency controls |
-| :robot: | **Slack Bot** | Query traces and get summaries directly in your channels |
-| :map: | **Source Maps** | Link client-side errors back to original source code |
+|                                                                                                                                         | Feature                          | Description                                                                        |
+| --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ---------------------------------------------------------------------------------- |
+| 🔔                                                                                                                                      | **Alerts & Notifications** | Threshold and anomaly alerts via Slack, email, and webhooks                        |
+| 👥                                                                                                                                      | **Team Auth & SSO**        | Multi-user access with roles, OIDC, and SAML support                               |
+| 📊                                                                                                                                      | **Custom Dashboards**      | Save filtered views, pin charts, build your own layouts                            |
+| :brain:                                                                                                                                 | **AI Insights**            | Anomaly detection, automatic root cause analysis, smart error grouping             |
+| ⏱                                                                                                                                      | **Performance Budgets**    | Set latency and error-rate thresholds per endpoint — fail CI builds when exceeded |
+| 🎥                                                                                                                                      | **Session Replay**         | Record browser sessions tied to traces — see what the user saw                    |
+| 🌐                                                                                                                                      | **Multi-Project**          | Monitor multiple apps and environments from a single dashboard                     |
+| 📈                                                                                                                                      | **API Analytics**          | Endpoint-level p50/p95/p99 latencies, throughput trends, slow query ranking        |
+| 📡                                                                                                                                      | **Uptime Monitoring**      | Synthetic health checks with public status pages                                   |
+| 📤                                                                                                                                      | **Export**                 | Trace and log export to CSV, JSON, and OpenTelemetry format                        |
+| ☁️                                                                                                                                    | **Cloud-Hosted Collector** | Managed ingestion — no self-hosting required                                      |
+| :octocat: | **Git Integration**        | Link traces to deploys and commits from GitHub and GitLab                          |
+| 🛡                                                                                                                                      | **Compliance Tools**       | PII redaction rules, data masking, audit trail export                              |
+| 🗺                                                                                                                                      | **Multi-Region**           | Geo-distributed collectors with data residency controls                            |
+| 🤖                                                                                                                                      | **Slack Bot**              | Query traces and get summaries directly in your channels                           |
+| :map:                                                                                                                                   | **Source Maps**            | Link client-side errors back to original source code                               |
 
 Want to see a feature ship sooner? [Open an issue](https://github.com/ashishgautam02/fluxory-npm/issues) or upvote an existing one.
 
@@ -321,3 +321,5 @@ MIT
 <p align="center">
   Built with care. If fluxory helps you, <a href="http://razorpay.me/@ashishgautam1058">buy me a coffee</a>.
 </p>
+
+Coffee cost just a Dollar here.

@@ -1,6 +1,6 @@
 # @fluxory/client
 
-Zero-config browser auto-instrumentation for [fluxory](https://github.com/AshishGautamKarn/fluxory).
+Zero-config browser auto-instrumentation for [fluxory](https://github.com/ashishgautam02/fluxory-npm).
 
 ## Install
 
@@ -38,7 +38,7 @@ initClient({
 })
 ```
 
-See the [main readme](https://github.com/AshishGautamKarn/fluxory) for full documentation.
+See the [main readme](https://github.com/ashishgautam02/fluxory-npm) for full documentation.
 
 ## License
 

@@ -1,0 +1,20 @@
+{
+  "name": "fluxory",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "build:core": "npm run build -w packages/core",
+    "build:node": "npm run build -w packages/node",
+    "build:client": "npm run build -w packages/client",
+    "build:dashboard": "npm run build -w packages/dashboard",
+    "dev:dashboard": "npm run dev -w packages/dashboard",
+    "clean": "rimraf packages/*/dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "rimraf": "^5.0.5"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "name": "@fluxory/dashboard",
+  "version": "0.1.0",
+  "description": "Live observability dashboard for Fluxory",
+  "main": "./dist/server/index.js",
+  "types": "./dist/server/index.d.ts",
+  "bin": {
+    "fluxory": "./bin/fluxory.js"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "scripts": {
+    "build": "npm run build:ui && npm run build:server",
+    "build:ui": "vite build",
+    "build:server": "tsup",
+    "dev": "concurrently \"vite\" \"tsx watch src/server/index.ts\"",
+    "start": "node dist/server/index.js"
+  },
+  "dependencies": {
+    "@fluxory/core": "0.1.0",
+    "sql.js": "^1.16.0",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/dagre": "^0.7.52",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.42",
+    "@types/react-dom": "^18.2.17",
+    "@types/ws": "^8.5.10",
+    "@vitejs/plugin-react": "^4.2.1",
+    "concurrently": "^8.2.2",
+    "dagre": "^0.8.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "reactflow": "^11.10.1",
+    "tsup": "^8.0.1",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AshishGautamKarn/fluxory",
+    "directory": "packages/dashboard"
+  },
+  "keywords": ["observability", "dashboard", "tracing", "logging", "monitoring", "apm", "topology", "real-time", "websocket"],
+  "engines": {
+    "node": ">=18"
+  }
+}

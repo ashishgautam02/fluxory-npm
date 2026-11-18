@@ -1,0 +1,37 @@
+{
+  "name": "@fluxory/client",
+  "version": "0.1.0",
+  "description": "Browser auto-instrumentation for Fluxory observability",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "dependencies": {
+    "@fluxory/core": "0.1.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AshishGautamKarn/fluxory",
+    "directory": "packages/client"
+  },
+  "keywords": ["observability", "tracing", "browser", "frontend", "monitoring", "fetch", "xhr", "real-user-monitoring", "rum"],
+  "engines": {
+    "node": ">=18"
+  }
+}

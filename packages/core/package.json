@@ -1,6 +1,6 @@
 {
   "name": "@fluxory/core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Core types, trace IDs, and transport for Fluxory observability",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -12,7 +12,9 @@
       "require": "./dist/index.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch"
@@ -27,7 +29,15 @@
     "url": "https://github.com/ashishgautam02/fluxory-npm",
     "directory": "packages/core"
   },
-  "keywords": ["observability", "tracing", "logging", "spans", "telemetry", "monitoring", "apm"],
+  "keywords": [
+    "observability",
+    "tracing",
+    "logging",
+    "spans",
+    "telemetry",
+    "monitoring",
+    "apm"
+  ],
   "engines": {
     "node": ">=18"
   }

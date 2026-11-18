@@ -1,6 +1,6 @@
-{
+﻿{
   "name": "@fluxory/dashboard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Live observability dashboard for Fluxory",
   "main": "./dist/server/index.js",
   "types": "./dist/server/index.d.ts",
@@ -19,7 +19,7 @@
     "start": "node dist/server/index.js"
   },
   "dependencies": {
-    "@fluxory/core": "0.1.0",
+    "@fluxory/core": "0.1.1",
     "sql.js": "^1.16.0",
     "ws": "^8.16.0"
   },
@@ -46,7 +46,17 @@
     "url": "https://github.com/ashishgautam02/fluxory-npm",
     "directory": "packages/dashboard"
   },
-  "keywords": ["observability", "dashboard", "tracing", "logging", "monitoring", "apm", "topology", "real-time", "websocket"],
+  "keywords": [
+    "observability",
+    "dashboard",
+    "tracing",
+    "logging",
+    "monitoring",
+    "apm",
+    "topology",
+    "real-time",
+    "websocket"
+  ],
   "engines": {
     "node": ">=18"
   }

@@ -1,6 +1,6 @@
-{
+﻿{
   "name": "@fluxory/node",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Node.js auto-instrumentation for Fluxory observability",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -12,13 +12,15 @@
       "require": "./dist/index.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch"
   },
   "dependencies": {
-    "@fluxory/core": "0.1.0"
+    "@fluxory/core": "0.1.1"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
@@ -31,7 +33,18 @@
     "url": "https://github.com/ashishgautam02/fluxory-npm",
     "directory": "packages/node"
   },
-  "keywords": ["observability", "tracing", "logging", "nodejs", "auto-instrumentation", "monitoring", "apm", "express", "postgresql", "redis"],
+  "keywords": [
+    "observability",
+    "tracing",
+    "logging",
+    "nodejs",
+    "auto-instrumentation",
+    "monitoring",
+    "apm",
+    "express",
+    "postgresql",
+    "redis"
+  ],
   "engines": {
     "node": ">=18"
   }

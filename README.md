@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ashishgautam02/fluxory-npm/main/assets/logo.svg" width="48" height="48" alt="fluxory" />
+  <img src="./assets/logo.svg" width="48" height="48" alt="fluxory" />
 </p>
 
 <h1 align="center">fluxory</h1>
@@ -10,11 +10,12 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@fluxory/node"><img src="https://img.shields.io/npm/v/@fluxory/node?label=%40fluxory%2Fnode&color=black" alt="npm" /></a>
-  <a href="https://www.npmjs.com/package/@fluxory/client"><img src="https://img.shields.io/npm/v/@fluxory/client?label=%40fluxory%2Fclient&color=black" alt="npm" /></a>
-  <a href="https://www.npmjs.com/package/@fluxory/dashboard"><img src="https://img.shields.io/npm/v/@fluxory/dashboard?label=%40fluxory%2Fdashboard&color=black" alt="npm" /></a>
-  <img src="https://img.shields.io/badge/license-MIT-black" alt="MIT" />
-  <a href="http://razorpay.me/@ashishgautam1058"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-Support-black" alt="Buy me a coffee" /></a>
+  <a href="http://razorpay.me/@ashishgautam1058"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-%E2%98%95-orange?style=flat-square" alt="Buy me a coffee" /></a>
+  &nbsp;
+  <a href="https://www.npmjs.com/package/@fluxory/node"><img src="https://img.shields.io/npm/v/@fluxory/node?label=%40fluxory%2Fnode&color=black&style=flat-square" alt="npm" /></a>
+  <a href="https://www.npmjs.com/package/@fluxory/client"><img src="https://img.shields.io/npm/v/@fluxory/client?label=%40fluxory%2Fclient&color=black&style=flat-square" alt="npm" /></a>
+  <a href="https://www.npmjs.com/package/@fluxory/dashboard"><img src="https://img.shields.io/npm/v/@fluxory/dashboard?label=%40fluxory%2Fdashboard&color=black&style=flat-square" alt="npm" /></a>
+  <img src="https://img.shields.io/badge/license-MIT-black?style=flat-square" alt="MIT" />
 </p>
 
 ---
@@ -319,7 +320,7 @@ MIT
 ---
 
 <p align="center">
-  Built with care. If fluxory helps you, <a href="http://razorpay.me/@ashishgautam1058">buy me a coffee</a>.
+  Built with care by <a href="https://github.com/ashishgautam02">Ashish Gautam</a>
 </p>
 
 Coffee cost just a Dollar here.

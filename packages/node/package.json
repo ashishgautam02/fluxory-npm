@@ -28,7 +28,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AshishGautamKarn/fluxory",
+    "url": "https://github.com/ashishgautam02/fluxory-npm",
     "directory": "packages/node"
   },
   "keywords": ["observability", "tracing", "logging", "nodejs", "auto-instrumentation", "monitoring", "apm", "express", "postgresql", "redis"],

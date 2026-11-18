@@ -43,7 +43,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AshishGautamKarn/fluxory",
+    "url": "https://github.com/ashishgautam02/fluxory-npm",
     "directory": "packages/dashboard"
   },
   "keywords": ["observability", "dashboard", "tracing", "logging", "monitoring", "apm", "topology", "real-time", "websocket"],

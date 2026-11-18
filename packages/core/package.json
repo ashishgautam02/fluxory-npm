@@ -24,7 +24,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AshishGautamKarn/fluxory",
+    "url": "https://github.com/ashishgautam02/fluxory-npm",
     "directory": "packages/core"
   },
   "keywords": ["observability", "tracing", "logging", "spans", "telemetry", "monitoring", "apm"],

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AshishGautamKarn/fluxory/main/assets/logo.svg" width="48" height="48" alt="fluxory" />
+  <img src="https://raw.githubusercontent.com/ashishgautam02/fluxory-npm/main/assets/logo.svg" width="48" height="48" alt="fluxory" />
 </p>
 
 <h1 align="center">fluxory</h1>
@@ -14,6 +14,7 @@
   <a href="https://www.npmjs.com/package/@fluxory/client"><img src="https://img.shields.io/npm/v/@fluxory/client?label=%40fluxory%2Fclient&color=black" alt="npm" /></a>
   <a href="https://www.npmjs.com/package/@fluxory/dashboard"><img src="https://img.shields.io/npm/v/@fluxory/dashboard?label=%40fluxory%2Fdashboard&color=black" alt="npm" /></a>
   <img src="https://img.shields.io/badge/license-MIT-black" alt="MIT" />
+  <a href="http://razorpay.me/@ashishgautam1058"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-Support-black" alt="Buy me a coffee" /></a>
 </p>
 
 ---
@@ -309,7 +310,7 @@ npm run dev:dashboard
 | :robot: | **Slack Bot** | Query traces and get summaries directly in your channels |
 | :map: | **Source Maps** | Link client-side errors back to original source code |
 
-Want to see a feature ship sooner? [Open an issue](https://github.com/AshishGautamKarn/fluxory/issues) or upvote an existing one.
+Want to see a feature ship sooner? [Open an issue](https://github.com/ashishgautam02/fluxory-npm/issues) or upvote an existing one.
 
 ## License
 
@@ -318,12 +319,5 @@ MIT
 ---
 
 <p align="center">
-  <b>Support this project</b><br/>
-  If fluxory helps you, consider buying me a coffee.
-</p>
-
-<p align="center">
-  <a href="http://razorpay.me/@ashishgautam1058">
-    <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-Support-black?style=for-the-badge" alt="Buy me a coffee" />
-  </a>
+  Built with care. If fluxory helps you, <a href="http://razorpay.me/@ashishgautam1058">buy me a coffee</a>.
 </p>
